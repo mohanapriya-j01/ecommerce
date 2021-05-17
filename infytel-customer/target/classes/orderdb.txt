@@ -1,0 +1,8 @@
+create schema `infy-order`;
+use `infy-order`;
+
+CREATE TABLE order (order_id INT primary key, buyer_id INT, amount DEC, date DATE, address VARCHAR(50), status VARCHAR(50));
+insert into order values(1,1,2500,'2017-08-12','Chicago','Order Placed');
+insert into order values(2,2,5610,'2017-08-11','Texas','Delivered');
+insert into order values(3,3,2332,'2017-08-10','NY','Dispatched');
+insert into order values(4,4,2542,'2017-09-10','NY','Packing');
