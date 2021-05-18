@@ -2,10 +2,11 @@ version: 0.2
 
 env:
   secrets-manager:
-    LOGIN: SonarCredentials:sonartoken
-    HOST: SonarCredentials:host
-    Organization: SonarCredentials:organization
-    Project: SonarCredentials:projectKey
+    LOGIN: SonarCredentials:2354fc317a0a8ac9577783c8d39c7eb3de5b6320
+    HOST: SonarCredentials:https://sonarcloud.io -Dsonar.organization=
+mohanapriya-j01-Dsonar.login=2354fc317a0a8ac9577783c8d39c7eb3de5b6320
+    Organization: SonarCredentials:mohanapriya-j01
+    Project: SonarCredentials:mohanapriya-j01
 
 phases:
   install:
