@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   secrets-manager:
-    LOGIN: 2354fc317a0a8ac9577783c8d39c7eb3de5b6320
+    LOGIN: 1644ef73d80a95ca25446a0a9c963e2e50fd1ea3
     HOST: https://sonarcloud.io/
     Organization: mohanapriya-j01
     Project: OrderMS
