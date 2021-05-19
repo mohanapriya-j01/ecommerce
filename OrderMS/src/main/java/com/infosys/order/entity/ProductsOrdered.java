@@ -4,8 +4,10 @@ import java.io.Serializable;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.IdClass;
 
 @Entity
+@IdClass(ProductsOrderedId.class)
 public class ProductsOrdered implements Serializable{
 	@Id
 	private Integer buyerId;
