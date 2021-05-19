@@ -5,7 +5,7 @@ env:
     LOGIN: 1644ef73d80a95ca25446a0a9c963e2e50fd1ea3
     HOST: https://sonarcloud.io/
     Organization: mohanapriya-j01
-    Project: OrderMS
+    Project: mohanapriya-j01_ecommerce
 
 phases:
   install:
