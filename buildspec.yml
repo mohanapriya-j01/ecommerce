@@ -2,11 +2,10 @@ version: 0.2
 
 env:
   secrets-manager:
-    LOGIN: 1644ef73d80a95ca25446a0a9c963e2e50fd1ea3
-    HOST: https://sonarcloud.io/
-    Organization: mohanapriya-j01
-    Project: mohanapriya-j01_ecommerce
-
+    LOGIN: SonarCredentials:sonartoken
+    HOST: SonarCredentials:host
+    Organization: SonarCredentials:organization
+    Project: SonarCredentials:projectKey
 phases:
   install:
     runtime-versions:
