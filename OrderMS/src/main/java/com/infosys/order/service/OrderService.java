@@ -43,17 +43,17 @@ public class OrderService {
 	}
 
     public String reOrder(Integer buyerId, Integer prodId) {
-    	ProductsOrdered productsOrdered = productsOrderedRepository.findByBuyerIdAndProdId(buyerId, prodId);
-    	OrderDTO dto = orderRepository.findByBuyerId(buyerId);
-    	Order order = new Order();
-    	order.setAddress(dto.getAddress());
-		order.setBuyerId(dto.getBuyerId());
-		order.setAmount(null);
-		LocalDate date = LocalDate.now();
-		order.setDate(date);
-		order.setStatus("Order Placed");
-		orderRepository.save(order);
-		productsOrderedRepository.save(productsOrdered);
+//     	ProductsOrdered productsOrdered = productsOrderedRepository.findByBuyerIdAndProdId(buyerId, prodId);
+//     	OrderDTO dto = orderRepository.findByBuyerId(buyerId);
+//     	Order order = new Order();
+//     	order.setAddress(dto.getAddress());
+// 		order.setBuyerId(dto.getBuyerId());
+// 		order.setAmount(null);
+// 		LocalDate date = LocalDate.now();
+// 		order.setDate(date);
+// 		order.setStatus("Order Placed");
+// 		orderRepository.save(order);
+// 		productsOrderedRepository.save(productsOrdered);
 		return "ReOrder is Successful";
     }
     
