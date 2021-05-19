@@ -1,0 +1,32 @@
+create schema `infy-order`;
+use `infy-order`;
+
+CREATE TABLE `Order` (
+	`order_id` INT ,
+	`buyer_id` INT ,
+	`amount` LONG ,
+	`date` DATE ,
+	`address` VARCHAR(50),
+	`status` VARCHAR(50),
+	PRIMARY KEY (`order_id`)
+);
+insert into `Order` values(1,1,2500.0,'2017-08-12','Chicago','Order Placed');
+insert into `Order` values(2,2,5610.0,'2017-08-11','Texas','Delivered');
+insert into `Order` values(3,3,2332.0,'2017-08-10','NY','Dispatched');
+insert into `Order` values(4,4,2542.0,'2017-09-10','NY','Packing');
+
+Select * from `Order`;
+
+CREATE TABLE `products_ordered` (
+	`buyer_id` INT NOT NULL,
+	`prod_id` INT NOT NULL,
+	`seller_id` INT NOT NULL,
+	`quantity` INT NOT NULL,
+	PRIMARY KEY (`buyer_id`,`prod_id`)
+);
+insert into `products_ordered` values(1,3,1,4);
+insert into `products_ordered` values(2,2,2,2);
+insert into `products_ordered` values(3,3,1,1);
+insert into `products_ordered` values(4,1,4,2);
+
+Select * from `products_ordered`;
